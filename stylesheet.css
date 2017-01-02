@@ -1,0 +1,318 @@
+*{
+	margin:0;	/*sets margin and padding to zero by default */
+	padding:0;
+	box-sizing:border-box;
+	} /*switches padding to inside of box instead of outside  */
+
+
+html		/*colours the html page as awhole in green */
+{
+	background-color:#8cc63f ;
+}
+
+#loginheader /*As there is no nav bar on thee login page this styles its replacement to fit properly and be coloured the right shade of white */
+{
+	background-color:#fffff0;
+	height:15vh;
+	width:67%;
+	margin:0 auto;
+	padding: 5px;
+	border-left:2px solid black;
+	border-right:2px solid black;
+	font-family:'Verdana' , 'Tahoma' , 'Times New Roman' , 'Arial';
+	font-size: 20px;
+}
+
+#loginformmargin		/*pushes the login form down the page */
+{
+	margin-top:17vh;
+}
+
+header /*Styles the header with the correct white colour, positioning and fonts   */
+{
+	background-color:#fffff0;
+	left:20%;
+	height:10vh;
+	width:67%;
+	margin:0 auto;
+	padding: 5px;
+	font-family:'Verdana', 'Tahoma' , 'Times New Roman' , 'Arial';
+	border-left:2px solid black;
+	border-right:2px solid black;
+}
+
+.logo	/*sets how big the logo is */
+{
+	height:8vh;
+	width:auto;
+	
+}
+
+.pagetitle /*sets the positioning of the h1 on each page */
+{
+	text-align:center;
+	display: inline-block;
+	margin-left:11%;
+}
+
+nav	/*Styles the navs color to green and sets its positioning  */
+{
+	background-color:#8cc63f;
+	height:5vh;
+	width:67%;
+	margin: 0 auto;
+	border:2px solid black;
+}
+
+
+
+.menu	/*Styles the menu div for the navbar making it its full size with no padding and margin  */
+{
+	margin:0 auto;
+	padding:0;
+	width:100%;
+}
+
+.menu li	/*The list items inside the menu div for the navbar contents are styled to have a specific size each and be postioned correctly and without bulletpoints  */
+{
+	float:left;
+	width:25%;
+	list-style-type: none;
+ }
+ 
+.menu li a		/*The links(text) for the menu divs list items are styled  */
+{
+	display:inline-block; 
+	color:white;
+	text-decoration:none;
+	text-align: center;
+	font-family:'Verdana', 'Tahoma' , 'Times New Roman' , 'Arial';
+	font-size:17px;
+	cursor:pointer;
+	background-color: #8cc63f;
+	height:4.6vh;
+	padding: 1.15vh ;
+	width:100%;
+}
+
+.menu li a:hover	/*when hovering over a link then its colour changes to a darker green*/
+{
+	 background-color: #5fa332;
+}
+
+
+li a, .admindropbutton  /*within the menu div list two linkes are part of a class and this styles that  */
+{
+    background-color:#8cc63f;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+	height:4.6vh;
+	width:25%;
+	text-align: center;
+
+}
+
+.admindropdown  /*this makes the div in the navigation for the dropdown display in line with other list elements  and at the correct size*/
+{
+	position: relative;
+	display: inline-block;
+	width:100%;
+}
+
+/* this styles the dropdown content which are hidden until you scroll over it */
+.admindropdowncontents
+ {
+    display: none;
+    position: absolute;
+    width:100%;
+}
+
+/* this styles the links inside the dropdown */
+.admindropdowncontents a 
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+	font-family:'Verdana', 'Tahoma' , 'Times New Roman' , 'Arial';
+	width:20%;
+	text-align: center;
+}
+
+
+/* makes the dropdown contents show when the dropdown is hovered over */
+.admindropdown:hover .admindropdowncontents
+{
+    display: block;
+}
+
+/* Changes the background color of the dropdown button when the dropdown content is shown */
+li a:hover,.admindropdown:hover .admindropbutton 
+{
+    background-color: #5fa332;
+}
+		
+			
+		
+section	/*styles the contents of the section on each page */
+{
+	background-color:#fffff0;
+	left:20%;
+	min-height:85vh;
+	width:67%;
+	margin:0 auto;
+	padding: 5px;
+	text-align:center;
+	font-family:'Tahoma' ,'Verdana',  'Times New Roman' , 'Arial';
+	border-left:2px solid black;
+	border-right:2px solid black;
+}
+
+.buttons	/*styles a way for all buttons execpt the ones on the search page to look */
+{
+	box-shadow:none;
+	background-color:#8cc63f;
+	color:white;
+	font-family:'Tahoma' , 'Verdana', 'Times New Roman' , 'Arial';
+	border:2px solid black;
+	border-radius:12px;
+	width:30%;
+	height:6vh;
+	font-size:20px;
+	cursor: pointer;
+}
+
+.buttons:hover	/*makes all buttons execpt the ones on the search page to change colour to a darker green when hovered over*/
+{
+	background-color:#5fa332;
+}
+
+.textinput /*For styling textinputs on all pages except for the search,login and account pages */
+{
+	border: 3px double #CCCCCC;
+	border-radius:10px;
+	width:30%;
+	height:6vh;
+	font-size:20px;
+	text-align:center;
+}
+
+.logintextinput	/*styles the login textinput the same as above but adds a margin */
+{
+	border: 3px double #CCCCCC;
+	border-radius:10px;
+	width:30%;
+	height:6vh;
+	font-size:20px;
+	text-align:center;
+	margin-bottom: 5vh;
+}
+
+::-webkit-input-placeholder	/*For Safari, Google Chrome, Opera 15+ and Microsoft Edge placholder syling using a psuedo-element  */
+{
+	text-align:center;
+	font-family:'Tahoma' , 'Verdana', 'Times New Roman' , 'Arial';
+	font-size:20px;
+}
+
+::-moz-placeholder /*For Mozilla Firefox 19+ placeholder styling using a pseudo-element*/
+{
+	text-align:center;
+	font-family:'Tahoma' , 'Verdana', 'Times New Roman' , 'Arial';
+	font-size:20px;
+}
+
+:-moz-placeholder /* For placeholder styling in Mozilla Firefox 4 to 18 using a pseudo-class  */
+{
+	text-align:center;
+	font-family:'Tahoma' , 'Verdana', 'Times New Roman' , 'Arial';
+	font-size:20px;
+}
+
+:-ms-input-placeholder /*For placeholder styling in Internet Explorer 10 and 11 using a pseudo-class  */
+{
+	text-align:center;
+	font-family:'Tahoma' , 'Verdana', 'Times New Roman' , 'Arial';
+	font-size:20px;
+} 
+
+.detailsdropdown /*styles the dropdowns on the admin staff and student account config page */
+{
+    width:30%;
+	height:6vh;
+	font-size:20px;
+	text-align:center;
+}
+
+.registryform /*Pushes most of the forms for each page down the page to be more centralised  */
+{
+	margin-top:5vh;
+}
+
+.largetextbox	/*a larger styled textbox used for writing reason for assigning cards and corrective action taken */
+{
+	border: 3px double #CCCCCC;
+	border-radius:10px;
+	width:30%;
+	height:20vh;
+	padding:1px;
+}
+
+table	/*styles tables giving them a border */
+{
+	border:1px solid black;	
+	margin:0 auto;
+}
+
+th	/*styles table headers giving them a border */
+{
+	border:1px solid black;	
+
+}
+
+td	/*styles table data giving them a border */
+{
+	border:1px solid black;	
+}
+
+.textboxalt	/*Alternate size text box styling used in the search page and account page  */
+{
+	width:15%;
+	height:6vh;
+	font-size:14px;
+	text-align:center;
+}
+
+.buttonalt		/*alternate size button styling used in search page */
+{
+	box-shadow:none;
+	background-color:#8cc63f;
+	color:white;
+	font-family:'Tahoma' , 'Verdana', 'Times New Roman' , 'Arial';
+	border:2px solid black;
+	border-radius:12px;
+	width:20%;
+	height:6vh;
+	font-size:14px;
+	cursor: pointer;
+}
+
+.buttonalt:hover	/*button hover colour change for alternate button styling */
+{
+	background-color:#5fa332;
+}
+
+#paragraph1	/*styling for a paragraph on the account page to appear in the correct position */
+{
+	 display:inline-block;
+	 float:left;
+	 margin-left:28%
+}
+
+#paragraph2	/*styling for a paragraph on the account page to appear in the correct position */
+{
+	 display:inline-block;
+	 float:right;
+	 margin-right:28%
+}
